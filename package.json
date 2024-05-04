@@ -2,7 +2,9 @@
   "name": "qml-ls-client",
   "displayName": "QML LS Client",
   "description": "Provides client for Qt's qmlls LSP server.",
-  "version": "0.0.1",
+  "version": "0.1.0",
+	"icon": "static/icon.png",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.89.0"
   },
