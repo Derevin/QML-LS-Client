@@ -5,11 +5,20 @@
   "version": "0.1.0",
 	"icon": "static/icon.png",
   "license": "MIT",
+  "publisher": "Derevin",
+  "bugs": {
+    "uri": "https://github.com/Derevin/QML-LS-Client/issues"
+  },
+  "homepage": "https://github.com/Derevin/QML-LS-Client",
+  "repository": {
+    "url": "https://github.com/Derevin/QML-LS-Client",
+    "type": "github"
+  },
   "engines": {
     "vscode": "^1.89.0"
   },
   "categories": [
-    "Other"
+    "Linters"
   ],
   "activationEvents": [
     "onStartupFinished"
