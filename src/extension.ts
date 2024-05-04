@@ -8,6 +8,9 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		vscode.commands.registerCommand("qml-ls-client.restartServer", async () => {
 			service.outputChannel.appendLine("restarting server");
+			if (service.isStarting()){
+				return;
+			}
 			service.dispose();
 			await service.start();
 		}),
