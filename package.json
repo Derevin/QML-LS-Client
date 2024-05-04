@@ -16,10 +16,26 @@
   "contributes": {
     "commands": [
       {
-        "command": "qml-ls-client.helloWorld",
-        "title": "Hello World"
+        "command": "qml-ls-client.restartServer",
+        "title": "Restart qmlls"
       }
-    ]
+    ],
+    "configuration":{
+      "title": "QML LS Client",
+      "type": "object",
+      "properties": {
+        "qml-ls-client.qmllsPath": {
+          "type": "string",
+          "description": "Path to the qmlls executable",
+          "default": ""
+        },
+        "qml-ls-client.buildDir": {
+          "type": "string",
+          "description": "Path to the build directory. Set the path in this variable, or via other means (env variable QMLLS_BUILD_DIRS or in .qmlls.ini file) for proper functionality.",
+          "default": ""
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
