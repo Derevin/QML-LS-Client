@@ -11,11 +11,6 @@ export class QmllsService implements vscode.Disposable {
 		this.outputChannel.appendLine("Starting QML LS Client...");
 
 		const args: string[] = Config.getBuildDir() !== "" ? ["--build-dir", Config.getBuildDir()] : [];
-		if (Config.getQmllsPath() === ""){
-			vscode.window.showErrorMessage("QML LS Client: qmlls path empty, cannot start");
-			this.outputChannel.appendLine("qmlls path empty, cannot start");
-			return;
-		}
 
 		const qmlls: vscodelc.Executable = {
 			command: Config.getQmllsPath(),

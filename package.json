@@ -38,7 +38,7 @@
         "qml-ls-client.qmllsPath": {
           "type": "string",
           "description": "Path to the qmlls executable",
-          "default": ""
+          "default": "qmlls"
         },
         "qml-ls-client.buildDir": {
           "type": "string",
