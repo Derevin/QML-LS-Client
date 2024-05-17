@@ -43,7 +43,7 @@
         "qml-ls-client.buildDir": {
           "type": "string",
           "description": "Path to the build directory. Set the path in this variable, or via other means (env variable QMLLS_BUILD_DIRS or in .qmlls.ini file) for proper functionality.",
-          "default": ""
+          "default": "${workspaceFolder}/build"
         }
       }
     }
